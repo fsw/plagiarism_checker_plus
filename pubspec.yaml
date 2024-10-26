@@ -8,9 +8,11 @@ issue_tracker: https://github.com/SumanSharmaTech/plagiarism_checker_plus/issues
 topics:
   - plagiarism
   - text-similarity
-  - nlp
   - cosine-similarity
   - jaccard-similarity
+  - string-similarity
+  - text-similarity
+  - nlp
 
 environment:
   sdk: ^3.5.0
