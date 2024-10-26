@@ -1,0 +1,28 @@
+name: plagiarism_checker_plus
+description: A Flutter package that checks plagiarism using Cosine Similarity and Jaccard Similarity algorithms.
+version: 1.0.0
+homepage: https://github.com/SumanSharmaTech/plagiarism_checker_plus
+repository: https://github.com/SumanSharmaTech/plagiarism_checker_plus
+issue_tracker: https://github.com/SumanSharmaTech/plagiarism_checker_plus/issues
+
+topics:
+  - plagiarism
+  - text-similarity
+  - nlp
+  - cosine-similarity
+  - jaccard-similarity
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
