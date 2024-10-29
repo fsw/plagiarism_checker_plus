@@ -4,11 +4,11 @@ A Flutter package for detecting text similarity and potential plagiarism using C
 
 ## Features
 
-🔍 **Multiple Algorithms**: Choose between Cosine Similarity, Jaccard Similarity, or use both
-🎚️ **Customizable Threshold**: Set your own similarity threshold for plagiarism detection
-📊 **Detailed Analysis**: Get comprehensive similarity scores and results
-🚀 **Easy Integration**: Simple API for quick implementation
-⚡ **Efficient Performance**: Optimized for both small and large text comparisons
+<br>🔍 **Multiple Algorithms**: Choose between Cosine Similarity, Jaccard Similarity, or use both
+<br>🎚️ **Customizable Threshold**: Set your own similarity threshold for plagiarism detection
+<br>📊 **Detailed Analysis**: Get comprehensive similarity scores and results
+<br>🚀 **Easy Integration**: Simple API for quick implementation
+<br>⚡ **Efficient Performance**: Optimized for both small and large text comparisons
 
 ## Installation
 
@@ -16,7 +16,7 @@ Add `plagiarism_checker_plus` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  plagiarism_checker_plus: ^1.0.0
+  plagiarism_checker_plus: ^1.0.2
 ```
 
 Then, install the package:

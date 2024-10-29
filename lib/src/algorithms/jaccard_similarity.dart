@@ -1,21 +1,26 @@
-class JaccardSimilarity {
-  /// Calculates Jaccard similarity between two texts.
+import '../text_processing/text_processor.dart';
+import 'similarity_algorithm.dart';
+
+class JaccardSimilarity implements SimilarityAlgorithm {
+  final TextProcessor _textProcessor;
+
+  JaccardSimilarity(this._textProcessor);
+
+  @override
   double calculate(String text1, String text2) {
-    final words1 = _toWordSet(text1);
-    final words2 = _toWordSet(text2);
+    final frequency1 = _textProcessor.processText(text1);
+    final frequency2 = _textProcessor.processText(text2);
 
-    final intersection = words1.intersection(words2).length;
-    final union = words1.union(words2).length;
+    final allWords = {...frequency1.keys, ...frequency2.keys};
+    final intersection = allWords
+        .where((word) =>
+            frequency1.containsKey(word) && frequency2.containsKey(word))
+        .length;
+    final union = allWords.length;
 
-    return union == 0 ? 0.0 : intersection / union;
-  }
-
-  /// Converts text to a set of words (tokenized, lowercased).
-  Set<String> _toWordSet(String text) {
-    return text
-        .toLowerCase()
-        .replaceAll(RegExp(r'[^\w\s]'), '')
-        .split(RegExp(r'\s+'))
-        .toSet();
+    if (union == 0) {
+      return 0.0;
+    }
+    return intersection / union;
   }
 }

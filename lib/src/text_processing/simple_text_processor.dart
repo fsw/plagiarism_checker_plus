@@ -1,6 +1,7 @@
-class TextProcessor {
-  /// Prepares text for similarity checking by tokenizing,
-  /// removing punctuation, and creating a frequency map.
+import 'text_processor.dart';
+
+class SimpleTextProcessor implements TextProcessor {
+  @override
   Map<String, int> processText(String text) {
     final wordList = text
         .toLowerCase()

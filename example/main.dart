@@ -363,8 +363,8 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               _buildResultItem(
                 'Similarity Score',
-                '${(result.score * 100).toStringAsFixed(1)}%',
-                result.score > threshold ? Colors.red : Colors.green,
+                '${(result.similarityScore * 100).toStringAsFixed(1)}%',
+                result.similarityScore > threshold ? Colors.red : Colors.green,
               ),
               const SizedBox(height: 16),
               _buildResultItem(
