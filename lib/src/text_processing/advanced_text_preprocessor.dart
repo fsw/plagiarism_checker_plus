@@ -1,6 +1,8 @@
 import 'text_preprocessor.dart';
 
+/// A class that preprocesses text by removing stop words and handling case sensitivity.
 class AdvancedTextPreprocessor implements TextPreprocessor {
+  /// The default list of stop words to remove from the text.
   final List<String> defaultStopWords = [
     'a',
     'an',
@@ -37,6 +39,11 @@ class AdvancedTextPreprocessor implements TextPreprocessor {
     'with'
   ];
 
+  /// Preprocesses the text by removing stop words and handling case sensitivity.
+  ///
+  /// [text] is the text to preprocess.
+  /// [caseSensitive] specifies whether the preprocessing should be case-sensitive (default is false).
+  /// [customStopWords] allows specifying a custom list of stop words.
   @override
   String preprocess(String text,
       {bool caseSensitive = false, List<String>? customStopWords}) {

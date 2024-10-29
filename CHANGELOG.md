@@ -15,3 +15,8 @@
 - Added stop words removal feature.
 - Added configurable custom stop words list.
 - Added case sensitivity options for text comparison.
+
+## 1.0.3
+
+- Added comprehensive documentation for public API elements.
+- Improved code readability and maintainability.

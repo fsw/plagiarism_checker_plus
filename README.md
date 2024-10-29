@@ -16,7 +16,7 @@ Add `plagiarism_checker_plus` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  plagiarism_checker_plus: ^1.0.2
+  plagiarism_checker_plus: ^1.0.3
 ```
 
 Then, install the package:

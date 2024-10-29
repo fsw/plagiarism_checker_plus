@@ -1,6 +1,10 @@
 import 'text_processor.dart';
 
+/// A simple text processor that converts text to lowercase, removes punctuation, and splits it into words.
 class SimpleTextProcessor implements TextProcessor {
+  /// Processes the given [text] by converting it to lowercase, removing punctuation, and splitting it into words.
+  ///
+  /// Returns a [Map] where the keys are words and the values are their frequencies in the text.
   @override
   Map<String, int> processText(String text) {
     final wordList = text

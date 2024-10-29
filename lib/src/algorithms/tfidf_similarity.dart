@@ -2,11 +2,14 @@ import '../text_processing/text_preprocessor.dart';
 import 'similarity_algorithm.dart';
 import 'dart:math';
 
+/// A class that calculates the similarity between two texts using the TF-IDF algorithm.
 class TfIdfSimilarity implements SimilarityAlgorithm {
   final TextPreprocessor _textPreprocessor;
 
+  /// Creates a [TfIdfSimilarity] instance with the specified [TextPreprocessor].
   TfIdfSimilarity(this._textPreprocessor);
 
+  /// Calculates the similarity between [text1] and [text2] using the TF-IDF algorithm.
   @override
   double calculate(String text1, String text2) {
     final processedText1 = _textPreprocessor.preprocess(text1);
